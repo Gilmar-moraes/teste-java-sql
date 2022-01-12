@@ -47,6 +47,6 @@ public class EstadoController {
 	@PostMapping
 	@ResponseStatus(HttpStatus.CREATED)
 	public EstadoModel adicionarEstado(@Valid @RequestBody EstadoModel estado) {
-		return estadoService.salvar(estado);
+		return estadoRepository.save(estado);
 	}
 }

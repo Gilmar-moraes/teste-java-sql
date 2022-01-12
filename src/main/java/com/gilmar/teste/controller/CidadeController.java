@@ -56,20 +56,20 @@ public class CidadeController {
 	
 	/**
 	 * Quantidade de áreas por UF
-	 */
+	 *
 	@GetMapping("/{idEstadoId}")
 	public List<CidadeModel> listarQuantAreaUF(EstadoModel idEstado){
 		return cidadeRepository.findByAreaPorUf(idEstado.getId());
-	}
+	}*/
 	
 	/** 
 	 * Quantidade de cidades com uma
 	 * população maior de 10.000
-	 */
+	 *
 	@GetMapping("/{populacao}")
-	public List<CidadeModel> listarPopulacao(double populacao){
-		return cidadeRepository.findByPopulacaoGrande(populacao);
-	}
+	public List<CidadeModel> listarPopulacao(){
+		return cidadeRepository.findByPopulacao();
+	}*/
 	
 	/**
 	 * Inclui uma nova cidade

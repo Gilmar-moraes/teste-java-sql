@@ -7,6 +7,7 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 
 import lombok.AllArgsConstructor;
@@ -28,11 +29,11 @@ public class EstadoModel {
 	@Column(name = "id_estados")
 	private Long id;
 	
-	@NotBlank(message = "O campo nome não pode esta em branco")
+	@NotNull(message = "O campo nome não pode esta em branco")
 	@Size(max = 45)
 	private String nome;
 	
-	@NotBlank(message = "O campo uf não pode esta em branco")
+	@NotNull(message = "O campo uf não pode esta em branco")
 	@Size(max = 2)
 	private String uf;
 }

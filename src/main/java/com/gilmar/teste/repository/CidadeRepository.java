@@ -27,9 +27,9 @@ public interface CidadeRepository extends JpaRepository<CidadeModel, Long>{
 			+ "estados.uf "
 			+ "FROM teste.estados "
 			+ "inner join "
-			+ "cidades on estados.id_Estados = cidades.codigo_estado WHERE cidades.codigo_estado = ?1 ;", nativeQuery = true)
+			+ "cidades on estados.id_Estados = cidades.codigo_estado WHERE cidades.codigo_estado = ?1; ", nativeQuery = true)
 	List<CidadeModel> findByAreaPorUf(Long codigoEstado);
 	
-	@Query(name = "select count(cidades.nome) from teste.cidades where populacao>10.000", nativeQuery = true)
-	List<CidadeModel> findByPopulacaoGrande(double populacao);
+	//@Query(name = "select count(cidades.nome) from teste.cidades where populacao>10.000", nativeQuery = true)
+	//List<CidadeModel> findByPopulacao();
 }

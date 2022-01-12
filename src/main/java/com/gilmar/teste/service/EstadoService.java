@@ -1,5 +1,6 @@
 package com.gilmar.teste.service;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -9,10 +10,11 @@ import com.gilmar.teste.repository.EstadoRepository;
 
 import lombok.AllArgsConstructor;
 
-@AllArgsConstructor
+
 @Service
 public class EstadoService {
 
+	@Autowired
 	private EstadoRepository estadoRepository;
 	
 	public EstadoModel buscarEstado(Long estadoId) {
