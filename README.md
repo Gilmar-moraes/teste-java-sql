@@ -15,9 +15,8 @@ _Para poder utilizar o contribuir para o desenvolvimento é necessario faz uma c
 
 ## Pré-requisitos
 
-- `mvn --version`<br>
-  você deverá ver a indicação da versão do Maven instalada e
-  a versão do JDK, dentre outras. Observe que o JDK é obrigatório, assim como
-  a definição das variáveis de ambiente **JAVA_HOME** e **M2_HOME**.
-  
-  
+- `mvn --version 4.0.0`<br>
+- `Spring Boot --version 2.6.2`<br>
+- `Java --version 1.8`<br>
+- `MySql --version 8.0`<br> 
+- `Lombok --version 1.18.18`<br>
